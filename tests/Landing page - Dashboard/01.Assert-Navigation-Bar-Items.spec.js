@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test'
-import { LoginPage } from '../../helpers/loginPage';
+import { LoginPage } from '../../helpers/POM/loginPage.js';
+
 
 test('Assert navigation bar item count', async({page})=>{
     const loginPage = new LoginPage(page);
@@ -19,5 +20,3 @@ test('Assert navigation bar item count', async({page})=>{
     //expect number of items to be 12
     await expect(navigationBarItems).toHaveCount(12);
 }) 
-
-

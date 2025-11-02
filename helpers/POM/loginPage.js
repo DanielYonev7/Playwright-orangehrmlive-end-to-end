@@ -1,5 +1,5 @@
 
-import { URL } from './url';
+import { URL } from '../url';
 
 export class LoginPage {
 

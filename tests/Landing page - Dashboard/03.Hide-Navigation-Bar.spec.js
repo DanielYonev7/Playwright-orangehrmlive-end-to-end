@@ -1,7 +1,9 @@
 import { test, expect } from '@playwright/test'
-import { LoginPage } from '../../helpers/loginPage';
+import { LoginPage } from '../../helpers/POM/loginPage.js';
+
 
 test("Hide navigation items", async ({page})=>{
+
     const loginPage = new LoginPage(page);
 
     await loginPage.Login('Admin', 'admin123');
