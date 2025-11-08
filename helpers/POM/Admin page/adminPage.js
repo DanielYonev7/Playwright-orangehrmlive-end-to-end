@@ -28,7 +28,6 @@ export class AdminPage {
             work_shifts: "//ul[@class='oxd-dropdown-menu']//a[contains(.,'Work Shifts')]",
 
         }
-
     }
 
     async numberOfElements(locator ,number){
