@@ -3,6 +3,7 @@ import { URL } from '../url';
 
 export class LoginPage {
 
+    
     constructor(page){
 
         this.page = page;
