@@ -15,7 +15,7 @@ test.beforeEach(async ({page})=>{
 })
 
 
-test.skip("02.01 Navigation bar - header - visible elements", async ({page})=>{
+test("02.01 Navigation bar - header - visible elements", async ({page})=>{
 
     await adminPage(page).numberOfElements(adminPage(page).navigation_bar_top_elements, 5);
 
