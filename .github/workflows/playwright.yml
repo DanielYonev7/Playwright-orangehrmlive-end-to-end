@@ -24,6 +24,7 @@ jobs:
 
     - run: npm ci
     - run: npx playwright install --with-deps
+      timeout-minutes: 20
 
     - name: Run Playwright tests
-      run: npx playwright test --project=${{ github.event.inputs.browser }}
+      run: npx playwright test --project=chromium
