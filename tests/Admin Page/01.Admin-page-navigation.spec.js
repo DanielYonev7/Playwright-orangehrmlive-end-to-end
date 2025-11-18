@@ -11,5 +11,4 @@ import { credentials } from '../../helpers/credentials';
     await app.loginPage.Login(credentials.username, credentials.password);
     await page.click(app.navigationBar.admin_Page);
     await expect(adminHeader).toBeVisible();
-
 })
