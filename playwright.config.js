@@ -1,5 +1,12 @@
 // playwright.config.js
+import dotenv from 'dotenv';
+import path from 'path';
+import { fileURLToPath } from 'url';
 import { defineConfig } from '@playwright/test';
+
+dotenv.config({
+  path: `./helpers/POM/config/.env.${process.env.NODE_ENV}`
+})
 
 export default defineConfig({
 
@@ -26,3 +33,4 @@ export default defineConfig({
 //     },
 //   ],
 // })
+
